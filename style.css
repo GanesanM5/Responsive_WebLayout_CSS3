@@ -1,0 +1,101 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1fr 0.8fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "sidebar main main main"
+        "sidebar content1 content2 content3"
+        "sidebar footer footer footer"
+
+    ;
+    grid-gap: 0.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: aqua;
+    grid-area: nav;
+}
+
+main {
+    background-color: blue;
+    grid-area: main;
+}
+
+sidebar {
+    background-color: burlywood;
+    grid-area: sidebar;
+}
+
+.content1 {
+    background-color: blueviolet;
+    grid-area: content1;
+}
+
+.content2 {
+    background-color: chartreuse;
+    grid-area: content2;
+}
+
+.content3 {
+    background-color: chocolate;
+    grid-area: content3;
+}
+
+footer {
+    background-color: darkgoldenrod;
+    grid-area: footer;
+}
+
+@media (max-width:568px) {
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1.5fr 1fr 1.4fr 1fr 1fr 0.8fr;
+        grid-template-areas:
+            "nav"
+            "main"
+            "sidebar"
+            "content1"
+            "content2"
+            "content3"
+            "footer"
+
+        ;
+        grid-gap: 0.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width:460px) {
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1.5fr 1fr 1.4fr 1fr 1fr 0.8fr;
+        grid-template-areas:
+            "nav"
+            "main"
+            "sidebar"
+            "content1"
+            "content2"
+            "content3"
+            "footer"
+
+        ;
+        grid-gap: 0.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 10px;
+        text-align: center;
+    }
+}
